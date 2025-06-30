@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelPro - Liburan Anti Galau, Jaminan Aman dari Allianz!</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font - Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    .hero-section {
+      background-image: url('9E639BFA-22D7-47EE-A185-FE99172BCD6B.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.5); /* agar teks tetap terbaca */
+    }
+    .btn-primary {
+      background: linear-gradient(to right, #3B82F6, #0EA5E9);
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+    }
+    .card-shadow {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease-in-out;
+    }
+    .card-shadow:hover {
+      transform: translateY(-5px);
+    }
+    .feature-icon {
+      color: #2563EB;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg rounded-b-xl py-4 px-6 md:px-12 fixed w-full z-50 top-0">
+    <div class="container mx-auto flex justify-between items-center flex-wrap">
+      <a href="#" class="text-2xl font-bold text-blue-600">TravelPro | Asuransi Perjalanan</a>
+      <div class="block lg:hidden">
+        <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-blue-500">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v15z"/></svg>
+        </button>
+      </div>
+      <div id="nav-content" class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0">
+        <ul class="lg:flex justify-end flex-1 items-center">
+          <li class="mr-6 mb-4 lg:mb-0"><a class="text-gray-700 hover:text-blue-600 font-medium" href="#hero">Beranda</a></li>
+          <li class="mr-6 mb-4 lg:mb-0"><a class="text-gray-700 hover:text-blue-600 font-medium" href="#features">Fitur Unggulan</a></li>
+          <li class="mr-6 mb-4 lg:mb-0"><a class="text-gray-700 hover:text-blue-600 font-medium" href="#testimonials">Kata Mereka</a></li>
+          <li class="mr-6 mb-4 lg:mb-0"><a class="text-gray-700 hover:text-blue-600 font-medium" href="#faq">FAQ</a></li>
+          <li><a class="px-5 py-2 btn-primary text-white font-semibold rounded-full hover:shadow-xl" href="#cta">Cek Premi!</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero-section min-h-screen flex items-center justify-center text-center text-white pt-20 pb-10 relative">
+    <div class="hero-overlay absolute inset-0"></div>
+    <div class="container mx-auto relative z-10 px-4 py-16 md:py-24">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Jelajahi Dunia dengan Perlindungan Kelas Dunia!</h1>
+      <p class="text-lg sm:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto opacity-90">TravelPro, asuransi perjalanan dengan perlindungan komprehensif siap mendampingi kamu menjelajahi dunia.</p>
+      <a href="#cta" class="inline-block btn-primary text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl">Gas! Cari Tahu Preminya Sekarang</a>
+    </div>
+  </header>
+
+  <!-- Fitur -->
+  <section id="features" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-12">Kenapa TravelPro Worth It Banget Buat Kamu?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-md card-shadow text-center">
+          <div class="feature-icon mb-4"><i class="fas fa-viruses fa-4x"></i></div>
+          <h3 class="text-xl font-semibold mb-4">Proteksi COVID-19 & Pandemi</h3>
+          <p>TravelPro sudah cover jaminan pandemi. Tenang berangkat, tenang pulang.</p>
+        </div>
+        <!-- kamu bisa tambah fitur lain di sini -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="py-16 bg-blue-600 text-white text-center rounded-t-xl">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-6">Penasaran Berapa Premi TravelPro Buat Kamu?</h2>
+      <p class="text-lg opacity-90 mb-8 max-w-xl mx-auto">Yuk, cari tahu sekarang! Liburan impianmu tinggal selangkah lagi.</p>
+      <a
+        href="https://wa.me/628981229999?text=Halo%20Allianz,%20saya%20mau%20tanya%20premi%20TravelPro%20untuk%20liburan%20saya!"
+        target="_blank"
+        class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-gray-100"
+      >
+        <i class="fab fa-whatsapp mr-2"></i> Tanya Premi Lewat WhatsApp!
+      </a>
+      <p class="text-sm mt-4 opacity-80">Dijamin respons cepat dan nggak ribet!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-10 rounded-t-xl text-center text-sm">
+    <div class="container mx-auto px-4">
+      &copy; 2025 TravelPro. Hak Cipta Dilindungi Undang-Undang.
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('nav-toggle').onclick = function() {
+      document.getElementById('nav-content').classList.toggle('hidden');
+    };
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Beranda
+
+
+
+
+
+
+
+
+
+Fitur Unggulan
+
+
+
+
+
+
+
+
+
+Kata Mereka
+
+
+
+
+
+
+
+
+
+FAQ
+
+
+
+
+
+
+
+
+
+Cek Premi!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jelajahi Dunia dengan Perlindungan Kelas Dunia!
+
+
+
+
+
+TravelPro, asuransi perjalanan dengan perlindungan komprehensif siap mendampingi kamu menjelajahi dunia.
+
+
+
+Gas! Cari Tahu Preminya Sekarang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Kenapa TravelPro Worth It Banget Buat Kamu?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Proteksi COVID-19 & Pandemi
+
+
+
+
+
+TravelPro sudah cover jaminan pandemi. Tenang berangkat, tenang pulang.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Penasaran Berapa Premi TravelPro Buat Kamu?
+
+
+
+
+
+Yuk, cari tahu sekarang! Liburan impianmu tinggal selangkah lagi.
+
+
+
+
+
+href="https://wa.me/628981229999?text=Halo%20Allianz,%20saya%20mau%20tanya%20premi%20TravelPro%20untuk%20liburan%20saya!"
+
+target="_blank"
+
+class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-gray-100"
+
+>
+
+Tanya Premi Lewat WhatsApp!
+
+
+
+
+
+Dijamin respons cepat dan nggak ribet!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© 2025 TravelPro. Hak Cipta Dilindungi Undang-Undang.
