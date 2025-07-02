@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelPro - Liburan Anti Galau, Jaminan Aman dari Allianz!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <style>
+    body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+    .hero-section {
+      background-image: url('./8D031B20-5C2F-401B-85E5-73F47D1C44DB.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .hero-overlay { background-color: rgba(0, 0, 0, 0.6); }
+    .btn-primary {
+      background: linear-gradient(to right, #3B82F6, #0EA5E9);
+      box-shadow: 0 4px 15px rgba(59,130,246,0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(59,130,246,0.6);
+    }
+    .card-shadow {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+    .card-shadow:hover { transform: translateY(-5px); }
+    .feature-icon { color: #2563EB; }
+    @keyframes fade-in-up {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-up {
+      animation: fade-in-up 0.6s ease-out forwards;
+    }
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg rounded-b-xl py-4 px-6 md:px-12 fixed w-full z-50 top-0">
+    <div class="container mx-auto flex justify-between items-center flex-wrap">
+      <a href="#" class="text-2xl font-bold text-blue-600">TravelPro | Asuransi Perjalanan</a>
+      <div class="block lg:hidden">
+        <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-blue-500">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v15z"/></svg>
+        </button>
+      </div>
+      <div id="nav-content" class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0">
+        <ul class="lg:flex justify-end flex-1 items-center">
+          <li class="mr-6 mb-4 lg:mb-0"><a class="text-gray-700 hover:text-blue-600 font-medium" href="#hero">Beranda</a></li>
+          <li class="mr-6 mb-4 lg:mb-0"><a class="text-gray-700 hover:text-blue-600 font-medium" href="#features">Fitur</a></li>
+          <li class="mr-6 mb-4 lg:mb-0"><a class="text-gray-700 hover:text-blue-600 font-medium" href="#testimonials">Testimoni</a></li>
+          <li class="mr-6 mb-4 lg:mb-0"><a class="text-gray-700 hover:text-blue-600 font-medium" href="#faq">FAQ</a></li>
+          <li><a class="px-5 py-2 btn-primary text-white font-semibold rounded-full" href="#cta">Cek Premi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero -->
+  <header id="hero" class="hero-section min-h-screen flex items-center justify-center text-center text-white pt-20 pb-10">
+    <div class="hero-overlay absolute inset-0"></div>
+    <div class="relative z-10 container mx-auto px-4 py-16 md:py-24">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in-up">Jelajahi Dunia dengan Perlindungan Kelas Dunia!</h1>
+      <p class="text-lg sm:text-xl lg:text-2xl mb-8 opacity-90 animate-fade-in-up delay-100">TravelPro, asuransi perjalanan komprehensif siap mendampingi kamu ke mana pun.</p>
+      <a href="#cta" class="inline-block btn-primary text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg animate-fade-in-up delay-200">Gas! Cek Preminya</a>
+    </div>
+  </header>
+  <!-- Fitur -->
+  <section id="features" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12">Kenapa TravelPro Worth It?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl card-shadow text-center">
+          <div class="feature-icon mb-4"><i class="fas fa-viruses fa-4x"></i></div>
+          <h3 class="text-xl font-semibold mb-2">Proteksi COVID-19 & Pandemi</h3>
+          <p>TravelPro sudah cover epidemi dan pandemi, kamu tetap tenang.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl card-shadow text-center">
+          <div class="feature-icon mb-4"><i class="fas fa-notes-medical fa-4x"></i></div>
+          <h3 class="text-xl font-semibold mb-2">Perlindungan Medis</h3>
+          <p>Sakit di luar negeri? Nikmati perlindungan mulai dari rawat jalan sampai dengan rawat inap.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl card-shadow text-center">
+          <div class="feature-icon mb-4"><i class="fas fa-headset fa-4x"></i></div>
+          <h3 class="text-xl font-semibold mb-2">Bantuan Darurat 24 Jam</h3>
+          <p>Kapan pun, di mana pun, tim Allianz siap 24/7 membantumu.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl card-shadow text-center">
+          <div class="feature-icon mb-4"><i class="fas fa-plane-slash fa-4x"></i></div>
+          <h3 class="text-xl font-semibold mb-2">Delay Pesawat? Aman</h3>
+          <p>Penundaan 4 jam ke atas dijamin. Santai menunggu tanpa galau.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl card-shadow text-center">
+          <div class="feature-icon mb-4"><i class="fas fa-suitcase-rolling fa-4x"></i></div>
+          <h3 class="text-xl font-semibold mb-2">Bagasi Terlindungi</h3>
+          <p>Barang hilang atau delay? Semua di-cover TravelPro.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl card-shadow text-center">
+          <div class="feature-icon mb-4"><i class="fas fa-hand-holding-usd fa-4x"></i></div>
+          <h3 class="text-xl font-semibold mb-2">Pilihan Plan Fleksibel</h3>
+          <p>Banyak pilihan plan sesuai kebutuhan dan budget kamu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimoni -->
+  <section id="testimonials" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12">Kata Mereka</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-2xl card-shadow text-center">
+          <img src="https://placehold.co/80x80/6366F1/FFFFFF?text=P.A." class="rounded-full mb-4"/>
+          <p class="italic mb-4">"Bagasi nyasar 28 jam, TravelPro cair Rp 3,5 juta. Luar biasa!"</p>
+          <p class="font-semibold">- P.A.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl card-shadow text-center">
+          <img src="https://placehold.co/80x80/8B5CF6/FFFFFF?text=M.R." class="rounded-full mb-4"/>
+          <p class="italic mb-4">"Flight delay 20 jam, dapat santunan Rp 2,5 juta, mantap!"</p>
+          <p class="font-semibold">- M.R.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ -->
+  <section id="faq" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12">FAQ</h2>
+      <div class="max-w-3xl mx-auto">
+        <div class="border-b py-6">
+          <button onclick="toggleFAQ('faq1')" class="flex justify-between w-full text-left font-semibold text-lg">Siapa saja yang bisa punya TravelPro?<i id="icon-faq1" class="fas fa-chevron-down text-blue-600"></i></button>
+          <div id="faq1" class="mt-4 text-gray-600 hidden">Kamu yang tinggal di Indonesia, punya identitas sah, usia 14 hari hingga 84 tahun, dan beli polis sebelum berangkat.</div>
+        </div>
+        <div class="border-b py-6">
+          <button onclick="toggleFAQ('faq2')" class="flex justify-between w-full text-left font-semibold text-lg">Apa yang tidak dijamin?<i id="icon-faq2" class="fas fa-chevron-down text-blue-600"></i></button>
+          <div id="faq2" class="mt-4 text-gray-600 hidden">Perang, bunuh diri, kondisi sakit sebelumnya, atau negara ber-sanksi tidak di-cover.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA -->
+  <section id="cta" class="py-16 bg-blue-600 text-white text-center rounded-t-xl">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-6">Penasaran Berapa Premi TravelPro?</h2>
+      <p class="mb-8 opacity-90">Yuk, tanyakan sekarang juga lewat WhatsApp.</p>
+      <a href="https://wa.me/628981229999?text=Hai%20,%20saya%20ingin%20tahu%20berapa%20premi%20untuk%20perjalanan%20saya%0ATujuan%20:%20%0ATanggal%20berangkat%20:%20%0ATanggal%20kepulangan%20:%20%0AJumlah%20Orang%20dewasa%20:%20%0AJumlah%20Anak-anak(di%20bawah%2017%20tahun)%20:%20%0AJumlah%20lansia%20(di%20atas%2070%20tahun)%20:%20"
+      target="_blank" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl hover:bg-gray-100 transition">Tanya Lewat WhatsApp</a>
+      <p class="text-sm mt-4 opacity-80">Fast response, no ribet!</p>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-10 rounded-t-xl text-center">
+    <p class="text-xs opacity-70 mb-2">TravelPro adalah produk dari Allianz. Brosur ini bukan bagian dari polis resmi. Silakan pelajari RIPLAY untuk detail resmi.</p>
+    <p class="text-xs opacity-70">PT Asuransi Allianz Utama Indonesia diawasi oleh OJK.</p>
+    <p class="text-xs mt-4">&copy; 2025 TravelPro. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById('nav-toggle').onclick = function() {
+      document.getElementById('nav-content').classList.toggle('hidden');
+    };
+    function toggleFAQ(id) {
+      const el = document.getElementById(id);
+      const icon = document.getElementById('icon-' + id);
+      el.classList.toggle('hidden');
+      icon.classList.toggle('fa-chevron-down');
+      icon.classList.toggle('fa-chevron-up');
+    }
+  </script>
+</body>
+</html>
